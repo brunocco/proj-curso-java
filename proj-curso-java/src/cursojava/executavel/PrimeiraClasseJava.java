@@ -12,7 +12,7 @@ public class PrimeiraClasseJava {
 		/*new Aluno() é uma instância ( criação de objeto)*/
 		/*aluno1 é uma referência para o objeto aluno*/
 		
-		/*String nome = JOptionPane.showInputDialog("Qual o nome do aluno?");
+		String nome = JOptionPane.showInputDialog("Qual o nome do aluno?");
 		String idade = JOptionPane.showInputDialog("Qual a idade?");
 		String dataNascimento = JOptionPane.showInputDialog("Qual data de nascimento?");
 		String rg = JOptionPane.showInputDialog("Qual RG?");
@@ -44,17 +44,19 @@ public class PrimeiraClasseJava {
 		aluno1.setNota3(Double.parseDouble(nota1));
 		aluno1.setNota4(Double.parseDouble(nota1));
 		
-		
+		/*metodo sem toString
 		System.out.println("O Nome é: " + aluno1.getNome());
 		System.out.println("A idade é: " + aluno1.getIdade());
 		System.out.println("A data de nascimento é: " + aluno1.getDataDeNascimento());
 		System.out.println("A Média da nota é: " + aluno1.getMediaNota());
 		System.out.println("Resultado = " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
-		System.out.println("Resultado = " + aluno1.getAlunoAprovado2());
-		*/
+		System.out.println("Resultado = " + aluno1.getAlunoAprovado2());*/
 		
-		Aluno aluno = new Aluno();
-		System.out.println(aluno.toString()); /* Descricao do objeto na memória*/
+		
+		//toString facilita deixando a descricao do objeto mas detalhado quando declarado
+		System.out.println(aluno1.toString()); /* Descricao do objeto na memória*/
+		System.out.println("Média do aluno: " + aluno1.getMediaNota());
+		System.out.println("Resultado: " + aluno1.getAlunoAprovado2());
 	}
 
 }

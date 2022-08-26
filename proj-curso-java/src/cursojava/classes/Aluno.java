@@ -169,6 +169,15 @@ public class Aluno {
 			return "Aluno está reprovado";
 		}
 	}
+
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataDeNascimento=" + dataDeNascimento
+				+ ", registroGeral=" + registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae
+				+ ", nomePai=" + nomePai + ", nomeEscola=" + nomeEscola + ", dataMatricula=" + dataMatricula
+				+ ", nota1=" + nota1 + ", nota2=" + nota2 + ", nota3=" + nota3 + ", nota4=" + nota4
+				+ ", serieMatriculado=" + serieMatriculado + "]";
+	}
 	
 	/* veremos os métodos Getters e Setters do Objeto*/
 	/* SET é para adicionar ou receber dados para os atributos*/
