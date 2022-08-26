@@ -44,19 +44,35 @@ public class PrimeiraClasseJava {
 		aluno1.setNota3(Double.parseDouble(nota1));
 		aluno1.setNota4(Double.parseDouble(nota1));
 		
-		/*metodo sem toString
+		/*metodo sem toString*/
 		System.out.println("O Nome é: " + aluno1.getNome());
 		System.out.println("A idade é: " + aluno1.getIdade());
 		System.out.println("A data de nascimento é: " + aluno1.getDataDeNascimento());
 		System.out.println("A Média da nota é: " + aluno1.getMediaNota());
 		System.out.println("Resultado = " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
-		System.out.println("Resultado = " + aluno1.getAlunoAprovado2());*/
+		System.out.println("Resultado = " + aluno1.getAlunoAprovado2());
 		
 		
 		//toString facilita deixando a descricao do objeto mas detalhado quando declarado
-		System.out.println(aluno1.toString()); /* Descricao do objeto na memória*/
+		System.out.println(aluno1.toString()); // Descricao do objeto na memória
 		System.out.println("Média do aluno: " + aluno1.getMediaNota());
 		System.out.println("Resultado: " + aluno1.getAlunoAprovado2());
+		
+		/*Equals e hashcode (diferenciar e comparar objetos)
+		
+		Aluno aluno1 = new Aluno();
+		aluno1.setNome("Bruno");
+		aluno1.setNumeroCpf(123);
+		
+		Aluno aluno2 = new Aluno();
+		aluno2.setNome("Bruno");
+		aluno2.setNumeroCpf(123);
+		
+		if(aluno1.equals(aluno2)) {
+			System.out.println("São iguais");
+		}else {
+			System.out.println("não são iguais");
+		} */
 	}
 
 }
